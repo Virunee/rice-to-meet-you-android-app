@@ -42,6 +42,11 @@ class AllActivity : AppCompatActivity() {
         }
     }
 
+    override fun onStop() {
+        releaseMediaPlayer()
+        super.onStop()
+    }
+
     /**
      * Clean up the media player by releasing its resources.
      */
