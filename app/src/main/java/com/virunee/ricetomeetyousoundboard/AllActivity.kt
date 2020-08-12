@@ -3,6 +3,8 @@ package com.virunee.ricetomeetyousoundboard
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ArrayAdapter
+import android.widget.ListView
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_all.*
 
@@ -25,11 +27,15 @@ class AllActivity : AppCompatActivity() {
         sounds.add("R2MU sting")
         sounds.add("R2MU outro")
 
-        for(i in sounds) {
-            val soundView = TextView(this)
-            soundView.text = i
-            root_view_all.addView(soundView)
-        }
+//        for(i in sounds) {
+//            val soundView = TextView(this)
+//            soundView.text = i
+//            root_view_all.addView(soundView)
+//        }
+
+        val soundsAdapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, sounds)
+        val soundView: ListView = list_view_all
+        soundView.adapter = soundsAdapter
 
     }
 }
