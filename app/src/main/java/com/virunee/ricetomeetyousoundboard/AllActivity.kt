@@ -1,18 +1,16 @@
 package com.virunee.ricetomeetyousoundboard
 
 import android.media.MediaPlayer
+import android.media.MediaPlayer.OnCompletionListener
 import android.os.Bundle
-import android.widget.AdapterView
 import android.widget.ListView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.virunee.ricetomeetyousoundboard.R
 import kotlinx.android.synthetic.main.activity_all.*
 
 
 class AllActivity : AppCompatActivity() {
 
-    private var mediaPlayer: MediaPlayer = MediaPlayer()
+    private var mediaPlayer: MediaPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,10 +35,28 @@ class AllActivity : AppCompatActivity() {
         soundView.adapter = soundsAdapter
 
         soundView.setOnItemClickListener{ parent, view, position, id ->
+            releaseMediaPlayer()
             mediaPlayer = MediaPlayer.create(this, sounds.get(position).getAudioResource())
-            mediaPlayer.start()
+            mediaPlayer?.start()
+            mediaPlayer?.setOnCompletionListener(completionListener)
+        }
+    }
+
+    /**
+     * Clean up the media player by releasing its resources.
+     */
+    private var completionListener: OnCompletionListener? =
+        OnCompletionListener { // Now that the sound file has finished playing, release the media player resources.
+            releaseMediaPlayer()
         }
 
-
+    fun releaseMediaPlayer() {
+        // If the media player is not null, then it may be currently playing a sound.
+        if (mediaPlayer != null) {
+            // Regardless of the current state of the media player, release its resources
+            // because we no longer need it.
+            mediaPlayer?.release();
+            mediaPlayer = null
+        }
     }
 }
