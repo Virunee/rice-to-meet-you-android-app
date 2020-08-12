@@ -10,6 +10,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        
+        category_all.setOnClickListener {
+            Intent(this, AllActivity::class.java).also {
+                this.startActivity(it)
+            }
+        }
+
+        category_nigel.setOnClickListener {
+            Intent(this, NigelActivity::class.java).also {
+                this.startActivity(it)
+            }
+        }
+
+        category_evelyn.setOnClickListener {
+            Intent(this, EvelynActivity::class.java).also {
+                this.startActivity(it)
+            }
+        }
     }
 }
