@@ -11,7 +11,7 @@ import android.os.Bundle
 import android.widget.ListView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_all.*
+import kotlinx.android.synthetic.main.sounds_list.*
 
 
 class AllActivity : AppCompatActivity() {
@@ -23,7 +23,7 @@ class AllActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_all)
+        setContentView(R.layout.sounds_list)
 
         var sounds = ArrayList<Sound>()
         sounds.add(Sound("ning ah", "NING AH NING AH", R.raw.ning_ah))

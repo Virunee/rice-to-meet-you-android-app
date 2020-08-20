@@ -6,22 +6,36 @@
     android:layout_width="match_parent"
     android:orientation="vertical">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
     <TextView
         android:id="@+id/category_all"
-        android:layout_width="match_parent"
         android:text="@string/category_all"
+        style="@style/CategoryStyle"
+        android:background="?android:attr/selectableItemBackground"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/CategoryStyle"/>
+        android:background="@color/colorPrimary">
     <TextView
         android:id="@+id/category_nigel"
-        android:layout_width="match_parent"
         android:text="@string/category_nigel"
+        style="@style/CategoryStyle"
+        android:background="?android:attr/selectableItemBackground"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/CategoryStyle"/>
+        android:background="@color/colorPrimary">
     <TextView
         android:id="@+id/category_evelyn"
-        android:layout_width="match_parent"
         android:text="@string/category_evelyn"
-        android:layout_height="wrap_content"
-        style="@style/CategoryStyle"/>
+        style="@style/CategoryStyle"
+        android:background="?android:attr/selectableItemBackground" />
+    </FrameLayout>
 </LinearLayout>
