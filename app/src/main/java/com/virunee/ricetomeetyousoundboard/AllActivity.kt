@@ -17,7 +17,8 @@ import kotlinx.android.synthetic.main.activity_all.*
 class AllActivity : AppCompatActivity() {
 
     private var mediaPlayer: MediaPlayer? = null
-    private var audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
+
+    private lateinit var audioManager: AudioManager
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,6 +48,8 @@ class AllActivity : AppCompatActivity() {
         val soundsAdapter = SoundAdapter(this, sounds, R.color.colorYellow)
         val soundView: ListView = list_view_all
         soundView.adapter = soundsAdapter
+
+        audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
 
         // Request audio focus so in order to play the audio file. The app needs to play a
         // short audio file, so we will request audio focus with a short amount of time
