@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="0dp"
     android:id="@+id/list_view_all"
-    android:orientation="vertical"
-    android:numColumns="auto_fit">
+    android:numColumns="auto_fit"
+    android:columnWidth="200dp">
 
 </GridView>

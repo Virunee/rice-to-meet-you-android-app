@@ -16,6 +16,8 @@
         <item name="tabTextAppearance">@style/TabTextAppearance</item>
         <item name="tabBackground">@color/colorPrimary</item>
         <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabMaxWidth">0dp</item>
+        <item name="tabGravity">fill</item>
     </style>
 
     <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
