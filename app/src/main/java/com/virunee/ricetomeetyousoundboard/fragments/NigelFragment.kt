@@ -1,4 +1,4 @@
-package com.virunee.ricetomeetyousoundboard
+package com.virunee.ricetomeetyousoundboard.fragments
 
 import android.content.Context
 import android.media.AudioAttributes
@@ -12,9 +12,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.GridView
-import android.widget.ListView
 import androidx.annotation.RequiresApi
-import kotlinx.android.synthetic.main.sounds_list.*
+import com.virunee.ricetomeetyousoundboard.R
+import com.virunee.ricetomeetyousoundboard.Sound
+import com.virunee.ricetomeetyousoundboard.SoundAdapter
 import kotlinx.android.synthetic.main.sounds_list.view.*
 
 private var mediaPlayer: MediaPlayer? = null
@@ -26,7 +27,7 @@ private lateinit var audioManager: AudioManager
  * Use the [AllSoundsFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class EvelynFragment : Fragment() {
+class NigelFragment : Fragment() {
 
     override fun onStop() {
         super.onStop()
@@ -43,11 +44,46 @@ class EvelynFragment : Fragment() {
         val rootView = inflater.inflate(R.layout.sounds_list, container, false)
 
         var sounds = ArrayList<Sound>()
-        sounds.add(Sound(getString(R.string.sound_title_evelyn_ning_ah), "evelyn", R.raw.ning_ah))
-        sounds.add(Sound(getString(R.string.sound_title_good_comedians),"evelyn", R.raw.evelyn_good_comedian))
-        sounds.add(Sound(getString(R.string.sound_title_nigelll),"evelyn", R.raw.evelyn_nigel))
-        sounds.add(Sound(getString(R.string.sound_title_evelyn_youre_such_a_dick),"evelyn", R.raw.evelyn_ysad))
-        val soundsAdapter = SoundAdapter(activity, sounds, R.color.colorTransparent)
+        sounds.add(
+            Sound(
+                getString(
+                    R.string.sound_title_pussy
+                ), "nigel", R.raw.eat_my_p
+            )
+        )
+        sounds.add(
+            Sound(
+                getString(
+                    R.string.sound_title_nigel_no_nooo
+                ),
+                "nigel",
+                R.raw.nigel_no_noooo
+            )
+        )
+        sounds.add(
+            Sound(
+                getString(
+                    R.string.sound_title_nigel_stop_improving
+                ),
+                "nigel",
+                R.raw.nigel_stop_improving_yourself
+            )
+        )
+        sounds.add(
+            Sound(
+                getString(
+                    R.string.sound_title_nigel_why_like_this
+                ),
+                "nigel",
+                R.raw.nigel_why_like_this
+            )
+        )
+
+        val soundsAdapter = SoundAdapter(
+            activity,
+            sounds,
+            R.color.colorTransparent
+        )
         val soundView: GridView = rootView.list_view_all
         soundView.adapter = soundsAdapter
 

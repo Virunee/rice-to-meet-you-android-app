@@ -3,6 +3,9 @@ package com.virunee.ricetomeetyousoundboard
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.virunee.ricetomeetyousoundboard.fragments.AllSoundsFragment
+import com.virunee.ricetomeetyousoundboard.fragments.EvelynFragment
+import com.virunee.ricetomeetyousoundboard.fragments.NigelFragment
 
 class FixedTabsPagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(fragmentManager) {
 
