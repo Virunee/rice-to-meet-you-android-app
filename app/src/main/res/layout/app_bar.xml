@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/background_banner"
+    android:elevation="0dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+    android:paddingLeft="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/appbar_logo_image"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_red"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="4dp">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/appbar_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/appbar_logo_image"
+            android:fontFamily="@font/oswald"
+            android:text="Soundboard"
+            android:paddingLeft="20dp"
+            android:paddingTop="18dp"
+            android:textSize="28sp"
+            android:textColor="@color/colorWhite"/>
+        <TextView
+            android:id="@+id/appbar_text_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/appbar_logo_image"
+            android:layout_alignParentBottom="true"
+            android:text="by Virunee"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp"
+            android:fontFamily="@font/oswald"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

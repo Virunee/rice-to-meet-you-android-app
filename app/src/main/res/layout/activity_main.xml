@@ -5,7 +5,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorDarkGreyBackground">
+
+    <!-- Include Appbar -->
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
