@@ -1,15 +1,16 @@
 package com.virunee.ricetomeetyousoundboard
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
+import androidx.fragment.app.FragmentActivity
 import kotlinx.android.synthetic.main.sound_item.view.*
 
 
-class SoundAdapter(context: Context, sounds: ArrayList<Sound>, colourResource: Int) : ArrayAdapter<Sound>(context, colourResource, sounds) {
+class SoundAdapter(context: FragmentActivity?, sounds: ArrayList<Sound>, colourResource: Int) : ArrayAdapter<Sound>(
+    context!!, colourResource, sounds) {
 
     /** Resource ID for the background color for this list of words  */
     private var mColorResourceId = colourResource
