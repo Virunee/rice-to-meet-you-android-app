@@ -84,6 +84,15 @@ class NigelFragment : Fragment() {
             sounds,
             R.color.colorTransparent
         )
+
+        sounds.add(Sound(getString(R.string.sound_title_nigel_whey), "nigel", R.raw.nigel_whey))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_i_hate_zoom), "nigel", R.raw.nigel_i_hate_zoom))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_why_like_this),"nigel", R.raw.nigel_why_like_this))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_almost_diabetes), "nigel", R.raw.nigel_almost_diabetes))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_wet_dream), "nigel", R.raw.nigel_wet_dream))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_enjoy), "nigel", R.raw.nigel_enjoy_them))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_big_feminist), "nigel", R.raw.nigel_ur_big_feminist))
+
         val soundView: GridView = rootView.list_view_all
         soundView.adapter = soundsAdapter
 

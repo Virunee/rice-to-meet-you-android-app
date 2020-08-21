@@ -61,7 +61,20 @@ class AllSoundsFragment : Fragment() {
         sounds.add(Sound(getString(R.string.sound_title_nigel_no_nooo),"No noooo!", R.raw.nigel_no_noooo))
         sounds.add(Sound(getString(R.string.sound_title_nigel_stop_improving),"Stop improving yourself", R.raw.nigel_stop_improving_yourself))
         sounds.add(Sound(getString(R.string.sound_title_evelyn_youre_such_a_dick),"Nigelll, you're such a dick!", R.raw.evelyn_ysad))
-        sounds.add(Sound(getString(R.string.sound_title_nigel_why_like_this),"Haiyaa, why you like this?", R.raw.nigel_why_like_this))
+
+        sounds.add(Sound(getString(R.string.sound_title_evelyn_buy_me_hyunbin), "evelyn", R.raw.evelyn_buy_me_hyunbin))
+        sounds.add(Sound(getString(R.string.sound_title_evelyn_ruined_it), "evelyn", R.raw.evelyn_ruined_it))
+        sounds.add(Sound(getString(R.string.sound_title_evelyn_so_funny), "evelyn", R.raw.evelyn_so_funny))
+        sounds.add(Sound(getString(R.string.sound_title_evelyn_gag_reflex), "evelyn", R.raw.evelyn_no_gag_reflex))
+        sounds.add(Sound(getString(R.string.sound_title_evelyn_come_on_nigel), "evelyn", R.raw.evelyn_come_on_nigel))
+
+        sounds.add(Sound(getString(R.string.sound_title_nigel_whey), "nigel", R.raw.nigel_whey))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_i_hate_zoom), "nigel", R.raw.nigel_i_hate_zoom))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_why_like_this),"nigel", R.raw.nigel_why_like_this))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_almost_diabetes), "nigel", R.raw.nigel_almost_diabetes))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_wet_dream), "nigel", R.raw.nigel_wet_dream))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_enjoy), "nigel", R.raw.nigel_enjoy_them))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_big_feminist), "nigel", R.raw.nigel_ur_big_feminist))
 
         val soundsAdapter = SoundAdapter(activity, sounds, R.color.colorTransparent)
 

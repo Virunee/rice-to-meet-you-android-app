@@ -78,6 +78,11 @@ class EvelynFragment : Fragment() {
                 R.raw.evelyn_ysad
             )
         )
+        sounds.add(Sound(getString(R.string.sound_title_evelyn_buy_me_hyunbin), "evelyn", R.raw.evelyn_buy_me_hyunbin))
+        sounds.add(Sound(getString(R.string.sound_title_evelyn_ruined_it), "evelyn", R.raw.evelyn_ruined_it))
+        sounds.add(Sound(getString(R.string.sound_title_evelyn_so_funny), "evelyn", R.raw.evelyn_so_funny))
+        sounds.add(Sound(getString(R.string.sound_title_evelyn_gag_reflex), "evelyn", R.raw.evelyn_no_gag_reflex))
+
         val soundsAdapter = SoundAdapter(
             activity,
             sounds,
