@@ -28,12 +28,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/appbar_logo_image"
-            android:fontFamily="@font/oswald"
-            android:text="Soundboard"
+            android:fontFamily="@font/oswald_bold"
             android:paddingLeft="20dp"
             android:paddingTop="18dp"
-            android:textSize="28sp"
-            android:textColor="@color/colorWhite"/>
+            android:text="SOUNDBOARD"
+            android:textColor="@color/colorWhite"
+            android:textSize="28sp" />
         <TextView
             android:id="@+id/appbar_text_two"
             android:layout_width="match_parent"
@@ -42,7 +42,7 @@
             android:layout_alignParentBottom="true"
             android:text="by Virunee"
             android:paddingLeft="20dp"
-            android:paddingBottom="20dp"
+            android:paddingBottom="16dp"
             android:fontFamily="@font/oswald"
             android:textSize="18sp"/>
 

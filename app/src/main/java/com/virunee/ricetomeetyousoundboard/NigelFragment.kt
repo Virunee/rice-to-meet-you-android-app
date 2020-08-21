@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.GridView
 import android.widget.ListView
 import androidx.annotation.RequiresApi
 import kotlinx.android.synthetic.main.sounds_list.*
@@ -48,7 +49,7 @@ class NigelFragment : Fragment() {
         sounds.add(Sound("Why like this","Haiyaa, why you like this?", R.raw.nigel_why_like_this))
 
         val soundsAdapter = SoundAdapter(activity, sounds, R.color.colorYellow)
-        val soundView: ListView = rootView.list_view_all
+        val soundView: GridView = rootView.list_view_all
         soundView.adapter = soundsAdapter
 
         audioManager = activity!!.getSystemService(Context.AUDIO_SERVICE) as AudioManager

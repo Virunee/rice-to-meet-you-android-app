@@ -33,18 +33,13 @@ class SoundAdapter(context: FragmentActivity?, sounds: ArrayList<Sound>, colourR
             soundItemView?.sound_item_title_text_view as TextView
         titleTextView.setText(currentSound?.getTitle())
 
-        // get and set the description
-        val descriptionTextView =
-            soundItemView?.sound_item_description_text_view as TextView
-        descriptionTextView.setText(currentSound?.getDescription())
-
-        // Set the theme color for the list item
-        val textContainer =
-            soundItemView!!.sound_item_container
-        // Find the color that the resource ID maps to
-        val color = context.resources.getColor(mColorResourceId)
-        // Set the background color of the text container View
-        textContainer.setBackgroundColor(color)
+//        // Set the theme color for the list item
+//        val textContainer =
+//            soundItemView!!.sound_item_container
+//        // Find the color that the resource ID maps to
+//        val color = context.resources.getColor(mColorResourceId)
+//        // Set the background color of the text container View
+//        textContainer.setBackgroundColor(color)
 
 
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
