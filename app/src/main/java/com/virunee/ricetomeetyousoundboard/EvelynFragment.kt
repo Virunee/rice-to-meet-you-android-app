@@ -25,7 +25,7 @@ private lateinit var audioManager: AudioManager
  * Use the [AllSoundsFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class AllSoundsFragment : Fragment() {
+class EvelynFragment : Fragment() {
 
     override fun onStop() {
         super.onStop()
@@ -43,23 +43,9 @@ class AllSoundsFragment : Fragment() {
 
         var sounds = ArrayList<Sound>()
         sounds.add(Sound("ning ah", "NING AH NING AH", R.raw.ning_ah))
-        sounds.add(Sound("eat my p", "You are eating my pussy, boy", R.raw.eat_my_p))
-        sounds.add(Sound("careless whisper","careless whisper", R.raw.careless_whisper))
-        sounds.add(Sound("you make me feel special","you make me feel special", R.raw.special))
-        sounds.add(Sound("airhorn","airhorn", R.raw.airhorn))
-        sounds.add(Sound("finish him","finish him", R.raw.finish_him))
-        sounds.add(Sound("marvin gaye","marvin gaye", R.raw.marvin_gaye))
-        sounds.add(Sound("mongolia","mongolia", R.raw.mongolia))
-        sounds.add(Sound("lonely af","lonely af", R.raw.lonely_af))
-        sounds.add(Sound("R2MU intro","R2MU intro", R.raw.r2mu_intro))
-        sounds.add(Sound("R2MU sting","R2MU sting", R.raw.r2mu_sting))
-        sounds.add(Sound("R2MU outro","R2MU outro", R.raw.r2mu_outro))
         sounds.add(Sound("Good comedians","How good of a comedian are we", R.raw.evelyn_good_comedian))
         sounds.add(Sound("Nigellll!","Nigellll!", R.raw.evelyn_nigel))
-        sounds.add(Sound("No noooo","No noooo!", R.raw.nigel_no_noooo))
-        sounds.add(Sound("Stop improving","Stop improving yourself", R.raw.nigel_stop_improving_yourself))
         sounds.add(Sound("You're such a dick","Nigelll, you're such a dick!", R.raw.evelyn_ysad))
-        sounds.add(Sound("Why like this","Haiyaa, why you like this?", R.raw.nigel_why_like_this))
 
         val soundsAdapter = SoundAdapter(activity, sounds, R.color.colorYellow)
         val soundView: ListView = rootView.list_view_all
