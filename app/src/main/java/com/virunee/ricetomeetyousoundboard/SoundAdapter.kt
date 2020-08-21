@@ -12,9 +12,6 @@ import kotlinx.android.synthetic.main.sound_item.view.*
 class SoundAdapter(context: FragmentActivity?, sounds: ArrayList<Sound>, colourResource: Int) : ArrayAdapter<Sound>(
     context!!, colourResource, sounds) {
 
-    /** Resource ID for the background color for this list of words  */
-    private var mColorResourceId = colourResource
-
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         // Check if an existing view is being reused, otherwise inflate the view
 
@@ -32,15 +29,6 @@ class SoundAdapter(context: FragmentActivity?, sounds: ArrayList<Sound>, colourR
         val titleTextView =
             soundItemView?.sound_item_title_text_view as TextView
         titleTextView.setText(currentSound?.getTitle())
-
-//        // Set the theme color for the list item
-//        val textContainer =
-//            soundItemView!!.sound_item_container
-//        // Find the color that the resource ID maps to
-//        val color = context.resources.getColor(mColorResourceId)
-//        // Set the background color of the text container View
-//        textContainer.setBackgroundColor(color)
-
 
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
         // the ListView.

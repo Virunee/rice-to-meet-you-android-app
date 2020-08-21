@@ -3,6 +3,24 @@
     <string name="category_all_page_title">All Sounds</string>
     <string name="category_nigel_page_title">Nigel</string>
     <string name="category_evelyn_page_title">Evelyn</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sound_title_evelyn_ning_ah">Ning Ah!</string>
+    <string name="sound_title_pussy">Pussy</string>
+    <string name="sound_title_careless_whisper">Careless Whisper</string>
+    <string name="sound_title_special">Special</string>
+    <string name="sound_title_airhorn">Air Horn</string>
+    <string name="sound_title_finish_him">Finish Him!</string>
+    <string name="sound_title_marvin_gaye">Marvin Gaye</string>
+    <string name="sound_title_mongolia">Mongolia</string>
+    <string name="sound_title_lonely_af">Lonely AF</string>
+    <string name="sound_title_intro">R2MU Intro</string>
+    <string name="sound_title_outro">R2MU Outro</string>
+    <string name="sound_title_sting">R2MU Sting</string>
+    <string name="sound_title_good_comedians">Good comedians</string>
+    <string name="sound_title_nigelll">Nigelll!</string>
+    <string name="sound_title_nigel_no_nooo">No Nooo!</string>
+    <string name="sound_title_nigel_stop_improving">Stop improving</string>
+    <string name="sound_title_evelyn_youre_such_a_dick">You\'re such a dick!</string>
+    <string name="sound_title_nigel_why_like_this">Why like this?</string>
+
 </resources>

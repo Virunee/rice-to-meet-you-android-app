@@ -43,12 +43,11 @@ class EvelynFragment : Fragment() {
         val rootView = inflater.inflate(R.layout.sounds_list, container, false)
 
         var sounds = ArrayList<Sound>()
-        sounds.add(Sound("ning ah", "NING AH NING AH", R.raw.ning_ah))
-        sounds.add(Sound("Good comedians","How good of a comedian are we", R.raw.evelyn_good_comedian))
-        sounds.add(Sound("Nigellll!","Nigellll!", R.raw.evelyn_nigel))
-        sounds.add(Sound("You're such a dick","Nigelll, you're such a dick!", R.raw.evelyn_ysad))
-
-        val soundsAdapter = SoundAdapter(activity, sounds, R.color.colorYellow)
+        sounds.add(Sound(getString(R.string.sound_title_evelyn_ning_ah), "evelyn", R.raw.ning_ah))
+        sounds.add(Sound(getString(R.string.sound_title_good_comedians),"evelyn", R.raw.evelyn_good_comedian))
+        sounds.add(Sound(getString(R.string.sound_title_nigelll),"evelyn", R.raw.evelyn_nigel))
+        sounds.add(Sound(getString(R.string.sound_title_evelyn_youre_such_a_dick),"evelyn", R.raw.evelyn_ysad))
+        val soundsAdapter = SoundAdapter(activity, sounds, R.color.colorTransparent)
         val soundView: GridView = rootView.list_view_all
         soundView.adapter = soundsAdapter
 

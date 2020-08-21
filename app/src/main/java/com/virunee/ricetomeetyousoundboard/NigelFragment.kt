@@ -43,12 +43,12 @@ class NigelFragment : Fragment() {
         val rootView = inflater.inflate(R.layout.sounds_list, container, false)
 
         var sounds = ArrayList<Sound>()
-        sounds.add(Sound("eat my p", "You are eating my pussy, boy", R.raw.eat_my_p))
-        sounds.add(Sound("No noooo","No noooo!", R.raw.nigel_no_noooo))
-        sounds.add(Sound("Stop improving","Stop improving yourself", R.raw.nigel_stop_improving_yourself))
-        sounds.add(Sound("Why like this","Haiyaa, why you like this?", R.raw.nigel_why_like_this))
+        sounds.add(Sound(getString(R.string.sound_title_pussy), "nigel", R.raw.eat_my_p))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_no_nooo),"nigel", R.raw.nigel_no_noooo))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_stop_improving),"nigel", R.raw.nigel_stop_improving_yourself))
+        sounds.add(Sound(getString(R.string.sound_title_nigel_why_like_this),"nigel", R.raw.nigel_why_like_this))
 
-        val soundsAdapter = SoundAdapter(activity, sounds, R.color.colorYellow)
+        val soundsAdapter = SoundAdapter(activity, sounds, R.color.colorTransparent)
         val soundView: GridView = rootView.list_view_all
         soundView.adapter = soundsAdapter
 
