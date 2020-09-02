@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="labels">
+        <item>Airhorn</item>
+        <item>Careless Whisper</item>
+        <item>Eat my p</item>
+        <item>Ep.1 laughing</item>
+        <item>One less</item>
+        <item>Bury my mum</item>
+        <item>Sweating</item>
+        <item>Touched my mum</item>
+        <item>Rice to Meet You</item>
+        <item>Sri Lankans are beautiful</item>
+        <item>Never count Sri Lanka</item>
+        <item>Then aunties</item>
+        <item>Bedsheets</item>
+        <item>Butt out</item>
+        <item>Buy me Hyun Bin</item>
+        <item>Come on Nigel</item>
+        <item>Fruit</item>
+        <item>Good comedians</item>
+        <item>Naked</item>
+        <item>Nigelll!</item>
+        <item>No gag reflex</item>
+        <item>Ruined it</item>
+        <item>So funny</item>
+        <item>Why are they singing?</item>
+        <item>You\'re such a d</item>
+        <item>Finish him!</item>
+        <item>Lonely AF</item>
+        <item>Marvin Gaye</item>
+        <item>Mongolia</item>
+        <item>Almost diabetes</item>
+        <item>Dark turn</item>
+        <item>Don\'t leave me out</item>
+        <item>Enjoy them</item>
+        <item>Fckin don\'t</item>
+        <item>I hate Zoom</item>
+        <item>Nigel laugh 1</item>
+        <item>Nigel laugh 2</item>
+        <item>Nigel laugh 3</item>
+        <item>No noooo</item>
+        <item>Oh shit!</item>
+        <item>Shit sorry FUCK</item>
+        <item>Stop improving yourself</item>
+        <item>Thanks for coming</item>
+        <item>Big feminist</item>
+        <item>Wet dream</item>
+        <item>Whey</item>
+        <item>Missing out</item>
+        <item>Why like this?</item>
+        <item>You heard it first</item>
+        <item>NING AH</item>
+        <item>Intro</item>
+        <item>Outro</item>
+        <item>Sting</item>
+        <item>Special</item>
+        <item>Haiyaaa</item>
+    </string-array>
+
+    <integer-array name="ids">
+        <item>@raw/airhorn</item>
+        <item>@raw/careless_whisper</item>
+        <item>@raw/eat_my_p</item>
+        <item>@raw/episode_1_laughing</item>
+        <item>@raw/eshaan_goodthatsoneless</item>
+        <item>@raw/eshaan_ihadtoburymymum</item>
+        <item>@raw/eshaan_imsweating</item>
+        <item>@raw/eshaan_myballstouchedmymumshead</item>
+        <item>@raw/eshaan_ricetomeetyou</item>
+        <item>@raw/eshaan_srilankansarebeautiful</item>
+        <item>@raw/eshaan_wenevercountsrilanka</item>
+        <item>@raw/evelyn_beautifulthenaunties</item>
+        <item>@raw/evelyn_bedsheets</item>
+        <item>@raw/evelyn_buttout</item>
+        <item>@raw/evelyn_buy_me_hyunbin</item>
+        <item>@raw/evelyn_come_on_nigel</item>
+        <item>@raw/evelyn_fruit</item>
+        <item>@raw/evelyn_good_comedian</item>
+        <item>@raw/evelyn_naked</item>
+        <item>@raw/evelyn_nigel</item>
+        <item>@raw/evelyn_no_gag_reflex</item>
+        <item>@raw/evelyn_ruined_it</item>
+        <item>@raw/evelyn_so_funny</item>
+        <item>@raw/evelyn_whyaretheysinging</item>
+        <item>@raw/evelyn_ysad</item>
+        <item>@raw/finish_him</item>
+        <item>@raw/lonely_af</item>
+        <item>@raw/marvin_gaye</item>
+        <item>@raw/mongolia</item>
+        <item>@raw/nigel_almost_diabetes</item>
+        <item>@raw/nigel_darkturn</item>
+        <item>@raw/nigel_dontleavemeout</item>
+        <item>@raw/nigel_enjoy_them</item>
+        <item>@raw/nigel_fuckingdont</item>
+        <item>@raw/nigel_i_hate_zoom</item>
+        <item>@raw/nigel_laugh_1</item>
+        <item>@raw/nigel_laugh_2</item>
+        <item>@raw/nigel_laugh_3</item>
+        <item>@raw/nigel_no_noooo</item>
+        <item>@raw/nigel_ohshit</item>
+        <item>@raw/nigel_ohshitsorryfuck</item>
+        <item>@raw/nigel_stop_improving_yourself</item>
+        <item>@raw/nigel_thanksforcoming</item>
+        <item>@raw/nigel_ur_big_feminist</item>
+        <item>@raw/nigel_wet_dream</item>
+        <item>@raw/nigel_whey</item>
+        <item>@raw/nigel_whitepeoplearemissingout</item>
+        <item>@raw/nigel_why_like_this</item>
+        <item>@raw/nigel_youhearditherefirst</item>
+        <item>@raw/ning_ah</item>
+        <item>@raw/r2mu_intro</item>
+        <item>@raw/r2mu_outro</item>
+        <item>@raw/r2mu_sting</item>
+        <item>@raw/special</item>
+        <item>@raw/nigel_haiyaaa</item>
+    </integer-array>
+</resources>
