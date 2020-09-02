@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/sound_item_container"
     android:layout_width="match_parent"
-    android:layout_height="170dp"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <ImageView
@@ -17,14 +17,14 @@
     <TextView
         android:id="@+id/sound_item_title_text_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/oswald_bold"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:textAlignment="center"
         android:textColor="@color/colorWhite"
-        android:textSize="20sp"
-        tools:text="Sound Title Here"/>
+        android:textSize="18sp"
+        tools:text="Sound Title Here" />
 
 </LinearLayout>
