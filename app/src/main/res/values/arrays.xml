@@ -58,6 +58,64 @@
         <item>Haiyaaa</item>
     </string-array>
 
+    <string-array name="category">
+        <item>sfx</item>
+        <item>sfx</item>
+        <item>nigel</item>
+        <item>all</item>
+        <item>eshaan</item>
+        <item>eshaan</item>
+        <item>eshaan</item>
+        <item>eshaan</item>
+        <item>eshaan</item>
+        <item>eshaan</item>
+        <item>eshaan</item>
+        <item>evelyn</item>
+        <item>evelyn</item>
+        <item>evelyn</item>
+        <item>evelyn</item>
+        <item>evelyn</item>
+        <item>evelyn</item>
+        <item>evelyn</item>
+        <item>evelyn</item>
+        <item>evelyn</item>
+        <item>evelyn</item>
+        <item>evelyn</item>
+        <item>evelyn</item>
+        <item>evelyn</item>
+        <item>evelyn</item>
+        <item>sfx</item>
+        <item>sfx</item>
+        <item>sfx</item>
+        <item>sfx</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>nigel</item>
+        <item>evelyn</item>
+        <item>sfx</item>
+        <item>sfx</item>
+        <item>sfx</item>
+        <item>sfx</item>
+        <item>nigel</item>
+    </string-array>
+
     <integer-array name="ids">
         <item>@raw/airhorn</item>
         <item>@raw/careless_whisper</item>

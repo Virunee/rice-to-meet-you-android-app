@@ -16,6 +16,7 @@ import androidx.annotation.RequiresApi
 import com.virunee.ricetomeetyousoundboard.R
 import com.virunee.ricetomeetyousoundboard.Sound
 import com.virunee.ricetomeetyousoundboard.SoundAdapter
+import com.virunee.ricetomeetyousoundboard.SoundStore
 import kotlinx.android.synthetic.main.sounds_list.view.*
 
 private var mediaPlayer: MediaPlayer? = null
@@ -43,49 +44,11 @@ class EvelynFragment : Fragment() {
 
         val rootView = inflater.inflate(R.layout.sounds_list, container, false)
 
-        var sounds = ArrayList<Sound>()
-        sounds.add(
-            Sound(
-                getString(
-                    R.string.sound_title_evelyn_ning_ah
-                ), "evelyn", R.raw.ning_ah
-            )
-        )
-        sounds.add(
-            Sound(
-                getString(
-                    R.string.sound_title_good_comedians
-                ),
-                "evelyn",
-                R.raw.evelyn_good_comedian
-            )
-        )
-        sounds.add(
-            Sound(
-                getString(
-                    R.string.sound_title_nigelll
-                ),
-                "evelyn",
-                R.raw.evelyn_nigel
-            )
-        )
-        sounds.add(
-            Sound(
-                getString(
-                    R.string.sound_title_evelyn_youre_such_a_dick
-                ),
-                "evelyn",
-                R.raw.evelyn_ysad
-            )
-        )
-        sounds.add(Sound(getString(R.string.sound_title_evelyn_buy_me_hyunbin), "evelyn", R.raw.evelyn_buy_me_hyunbin))
-        sounds.add(Sound(getString(R.string.sound_title_evelyn_ruined_it), "evelyn", R.raw.evelyn_ruined_it))
-        sounds.add(Sound(getString(R.string.sound_title_evelyn_so_funny), "evelyn", R.raw.evelyn_so_funny))
-        sounds.add(Sound(getString(R.string.sound_title_evelyn_gag_reflex), "evelyn", R.raw.evelyn_no_gag_reflex))
+        val sounds = SoundStore.getAllSounds(activity!!.applicationContext).filter{sound -> sound.getDescription().contains("evelyn") }
 
         val soundsAdapter = SoundAdapter(
             activity,
-            sounds,
+            sounds as ArrayList<Sound>,
             R.color.colorTransparent
         )
         val soundView: GridView = rootView.list_view_all

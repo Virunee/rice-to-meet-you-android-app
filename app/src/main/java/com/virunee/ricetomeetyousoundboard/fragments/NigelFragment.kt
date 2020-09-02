@@ -16,6 +16,7 @@ import androidx.annotation.RequiresApi
 import com.virunee.ricetomeetyousoundboard.R
 import com.virunee.ricetomeetyousoundboard.Sound
 import com.virunee.ricetomeetyousoundboard.SoundAdapter
+import com.virunee.ricetomeetyousoundboard.SoundStore
 import kotlinx.android.synthetic.main.sounds_list.view.*
 
 private var mediaPlayer: MediaPlayer? = null
@@ -43,55 +44,13 @@ class NigelFragment : Fragment() {
 
         val rootView = inflater.inflate(R.layout.sounds_list, container, false)
 
-        var sounds = ArrayList<Sound>()
-        sounds.add(
-            Sound(
-                getString(
-                    R.string.sound_title_pussy
-                ), "nigel", R.raw.eat_my_p
-            )
-        )
-        sounds.add(
-            Sound(
-                getString(
-                    R.string.sound_title_nigel_no_nooo
-                ),
-                "nigel",
-                R.raw.nigel_no_noooo
-            )
-        )
-        sounds.add(
-            Sound(
-                getString(
-                    R.string.sound_title_nigel_stop_improving
-                ),
-                "nigel",
-                R.raw.nigel_stop_improving_yourself
-            )
-        )
-        sounds.add(
-            Sound(
-                getString(
-                    R.string.sound_title_nigel_why_like_this
-                ),
-                "nigel",
-                R.raw.nigel_why_like_this
-            )
-        )
+        val sounds = SoundStore.getAllSounds(activity!!.applicationContext).filter{ sound -> sound.getDescription().contains("nigel") }
 
         val soundsAdapter = SoundAdapter(
             activity,
-            sounds,
+            sounds as ArrayList<Sound>,
             R.color.colorTransparent
         )
-
-        sounds.add(Sound(getString(R.string.sound_title_nigel_whey), "nigel", R.raw.nigel_whey))
-        sounds.add(Sound(getString(R.string.sound_title_nigel_i_hate_zoom), "nigel", R.raw.nigel_i_hate_zoom))
-        sounds.add(Sound(getString(R.string.sound_title_nigel_why_like_this),"nigel", R.raw.nigel_why_like_this))
-        sounds.add(Sound(getString(R.string.sound_title_nigel_almost_diabetes), "nigel", R.raw.nigel_almost_diabetes))
-        sounds.add(Sound(getString(R.string.sound_title_nigel_wet_dream), "nigel", R.raw.nigel_wet_dream))
-        sounds.add(Sound(getString(R.string.sound_title_nigel_enjoy), "nigel", R.raw.nigel_enjoy_them))
-        sounds.add(Sound(getString(R.string.sound_title_nigel_big_feminist), "nigel", R.raw.nigel_ur_big_feminist))
 
         val soundView: GridView = rootView.list_view_all
         soundView.adapter = soundsAdapter

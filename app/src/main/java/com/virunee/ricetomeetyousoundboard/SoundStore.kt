@@ -1,6 +1,7 @@
 package com.virunee.ricetomeetyousoundboard
 
 import android.content.Context
+import android.util.Log
 
 
 object SoundStore {
@@ -11,22 +12,10 @@ object SoundStore {
         var soundResources = context.resources
         var labels = soundResources.obtainTypedArray(R.array.labels)
         var resourceIds = soundResources.obtainTypedArray(R.array.ids)
+        var category = soundResources.obtainTypedArray(R.array.category)
 
         for (i in 0 until labels.length()) {
-            var resourceName = resourceIds.getResourceId(i, -1).toString()
-            var description: String
-            description = when {
-                resourceName.contains("nigel") -> {
-                    "nigel"
-                }
-                resourceName.contains("evelyn") -> {
-                    "evelyn"
-                }
-                else -> {
-                    ""
-                }
-            }
-            sounds.add(Sound(labels.getString(i)!!, description, resourceIds.getResourceId(i, -1)))
+            sounds.add(Sound(labels.getString(i)!!, category.getString(i)!!, resourceIds.getResourceId(i, -1)))
         }
 
         labels.recycle()
